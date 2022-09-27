@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="._timePicker">
+
+    <TextView
+        android:id="@+id/TextViewPicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="選擇時間"
+        android:textSize="36dp" />
+
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextViewPicker"
+        android:layout_marginLeft="50dp"
+        app:backgroundTint="@color/theme"
+        android:text="開始時間" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextViewPicker"
+        android:layout_marginLeft="80dp"
+        android:layout_toRightOf="@+id/button6"
+        app:backgroundTint="@color/theme"
+        android:text="結束時間" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleView_timepicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button7"
+        android:layout_marginTop="1dp" />
+
+    <Button
+        android:id="@+id/timepicker_add_button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recycleView_timepicker"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shape2"
+        app:backgroundTint="@color/theme"
+        android:text="新增時段" />
+
+
+    <Button
+        android:id="@+id/Btn_addTimepicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shape2"
+        app:backgroundTint="@color/theme"
+        android:text="Next" />
+
+
+
+
+</RelativeLayout>

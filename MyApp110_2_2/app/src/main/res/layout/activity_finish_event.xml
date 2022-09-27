@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="._finishEvent">
+
+    <TextView
+        android:id="@+id/textViewfinish1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="行程建立"
+        android:textSize="36dp" />
+
+    <ImageView
+        android:id="@+id/imagefinish"
+        android:layout_below="@+id/textViewfinish1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_baseline_event_24"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        app:tint="@color/teal_200"/>
+
+    <TextView
+        android:id="@+id/textViewfinish2"
+        android:layout_below="@+id/textViewfinish1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@id/imagefinish"
+        android:text="逛街"
+        android:textColor="@color/black"
+        android:textSize="24dp" />
+
+    <ImageView
+        android:id="@+id/imagefinish2"
+        android:layout_below="@+id/textViewfinish1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/img_location"
+        app:tint="@color/teal_200" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_below="@+id/textViewfinish2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@id/imagefinish"
+        android:text="南紡威秀影城"
+        android:textColor="@color/black"
+        android:textSize="24dp" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:shrinkColumns="2"
+        android:stretchColumns="0"
+        android:layout_marginTop="20dp">
+
+        <TableRow>
+            <TextView
+                android:textStyle="bold"
+                android:text="8/15 \n15:00-16:00"
+                android:textSize="20dp"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:text="8/16 \n15:00-16:00"
+                android:textSize="20dp"
+                android:background="@color/teal_200"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:text="8/17 \n15:00-16:00"
+                android:textSize="20dp"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight='true'
+        android:layout_alignParentBottom='true'
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/shape"
+        app:backgroundTint="@color/theme"
+        android:text="建立活動" />
+
+
+</RelativeLayout>
